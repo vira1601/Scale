@@ -4,7 +4,7 @@ describe('Followed Roles Tab', () => {
         // browser with a 720p monitor
         cy.viewport(1300, 720)
       })
-    it('User Visits Ekrut Platform', () => {
+    it('User Visit New EMS', () => {
     cy.visit('http://devel.ekrut.com:8080/login')
     })
 

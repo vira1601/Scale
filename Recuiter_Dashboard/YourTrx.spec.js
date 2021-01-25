@@ -1,5 +1,5 @@
 describe('Your Transaction Tab', () => {
-    it('User Visits Ekrut Platform', () => {
+    it('User Visit New EMS', () => {
     cy.visit('http://devel.ekrut.com:8080/login')
     })
 

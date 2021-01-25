@@ -1,5 +1,5 @@
 describe('Approval List Tab', () => {
-    it('User Visits Ekrut Platform', () => {
+    it('User Visits New EMS', () => {
     cy.visit('http://devel.ekrut.com:8080/login')
     })
 

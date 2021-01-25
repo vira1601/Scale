@@ -1,5 +1,5 @@
 
-describe('User Creates New Role', () => {
+describe('User as BD', () => {
     
     // beforeEach(() => {
     //     // run these tests as if in a desktop
@@ -7,14 +7,14 @@ describe('User Creates New Role', () => {
     //     cy.viewport(1300, 1000)
     //   })
     
-    it('User Visit Drip Talents Page', () => {
+    it('User Visits BD Dashboard Page', () => {
     cy.visit('http://devel.ekrut.com:8080/login')
     })
 
     it('User Inputs Email',() => {
         cy.get(':nth-child(1) > .ant-input')
         .should('be.visible')
-        .type('aldo@ekrut.com')
+        .type('angel@ekrut.com')
     })
 
     it('User Inputs Password', () => {
@@ -27,8 +27,19 @@ describe('User Creates New Role', () => {
         cy.get('.content__body > .ant-btn-primary')
         .should('be.visible')
         .click()
-        cy.wait(10000)
     })
+
+    it('User Checks Cekam URL', () => {
+        cy.url()
+        .should('eq','http://devel.ekrut.com:8080/cekam')
+    })
+
+    it('User Click Leads Tab',()=>{
+        cy.get('#tab-tab-my-leads')
+        .scrollIntoView()
+        .click()
+    })
+
 
 })
 
